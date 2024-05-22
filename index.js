@@ -218,7 +218,7 @@ function Do_a_Frame() {
 const bottom_bar = new Image();
 bottom_bar.src = 'http://s2js.com/img/etc/flappybottom.png';
 
-const bird = new MySprite('./Assets/image2.png', 15, 30); // Adjust the width and height as needed
+const bird = new MySprite('./Assets/image2.png', 20, 30); // Adjust the width and height as needed
 bird.x = canvas.width / 3;
 bird.y = canvas.height / 2;
 
