@@ -5,8 +5,8 @@ canvas.width = 320;
 canvas.height = 480;
 
 const FPS = 40;
-const jump_amount = -5; // Reduced from -10 to -5
-const max_fall_speed = 5; // Reduced from 10 to 5
+const jump_amount = -100; // Reduced from -10 to -5
+const max_fall_speed = 50; // Reduced from 10 to 5
 const acceleration = 0.5; // Reduced from 1 to 0.5
 const pipe_speed = -2;
 let game_mode = 'prestart';
