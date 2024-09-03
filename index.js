@@ -5,9 +5,9 @@ canvas.width = 320;
 canvas.height = 480;
 
 const FPS = 40;
-const jump_amount = -10;
-const max_fall_speed = 10;
-const acceleration = 1;
+const jump_amount = -5; // Reduced from -10 to -5
+const max_fall_speed = 5; // Reduced from 10 to 5
+const acceleration = 0.5; // Reduced from 1 to 0.5
 const pipe_speed = -2;
 let game_mode = 'prestart';
 let time_game_last_running;
@@ -106,9 +106,9 @@ function add_pipe(x_pos, top_of_gap, gap_width) {
 
 function make_bird_tilt_appropriately() {
   if (bird.velocity_y < 0) {
-    bird.angle = -15;
-  } else if (bird.angle < 70) {
-    bird.angle += 4;
+    bird.angle = -10; // Reduced from -15 to -10
+  } else if (bird.angle < 40) { // Reduced from 70 to 40
+    bird.angle += 2; // Reduced from 4 to 2
   }
 }
 
